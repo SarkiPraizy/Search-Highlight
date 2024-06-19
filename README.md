@@ -34,6 +34,10 @@ This React application provides a real-time search interface that highlights mat
 
 2. Open your browser and go to `http://localhost:3000` to see the application in action.
 
+## Project Link
+
+https://search-highlight.vercel.app/
+
 ## Code Overview
 
 - The main code is in `src/App.js`.
