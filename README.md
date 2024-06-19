@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Real-Time Search with Highlighting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application provides a real-time search interface that highlights matching text in a list of items as the user types.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real-time filtering of a list based on user input.
+- Case-insensitive search.
+- Highlighting of the matching parts of the text.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository or download the source code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+   ```bash
+   cd real-time-search
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the dependencies:
 
-### `npm run build`
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+2. Open your browser and go to `http://localhost:3000` to see the application in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Code Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The main code is in `src/App.js`.
+- The styling is in `src/App.css`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `src/App.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Manages the state of the search query using the `useState` hook.
+- Filters and highlights items based on the query.
+- Updates the displayed list in real-time as the user types.
 
-## Learn More
+### `src/App.css`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Contains styles for the app, including the highlight class for matched text.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Sample Item List
 
-### Code Splitting
+The application searches and highlights within the following sample items:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```javascript
+const items = [
+  "JavaScript programming",
+  "HTML and CSS basics",
+  "Frontend development",
+  "Web design principles",
+  "Dynamic content handling",
+];
+```
