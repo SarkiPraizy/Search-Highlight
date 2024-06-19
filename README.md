@@ -18,7 +18,14 @@ This React application provides a real-time search interface that highlights mat
    cd real-time-search
    ```
 
-3. Install the dependencies:
+3. Use the Testing branch for all testing purposes
+
+
+    ```bash
+    git checkout Testing
+    ```
+
+4. Install the dependencies:
 
    ```bash
    npm install
